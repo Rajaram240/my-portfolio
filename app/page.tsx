@@ -71,7 +71,7 @@ export default function Portfolio() {
           kesharirajaram8@gmail.com 
         </a>
         <div className="mt-8 text-slate-600 text-sm">
-          Jharsuguda, Odisha, India  • +91-7008674346 
+          Jharsuguda, Odisha, India  • +91- 
         </div>
       </footer>
     </div>
