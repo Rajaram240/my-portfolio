@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { MapPin, Award, GraduationCap, briefcaseBusiness } from "lucide-react";
+import { MapPin, Award, GraduationCap, BriefcaseBusiness } from "lucide-react";
 
 export default function About() {
   return (

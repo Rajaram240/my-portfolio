@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 import Timeline from "@/components/Timeline";
 import SkillsCloud from "@/components/SkillsCloud";
 import ResumeDownload from "@/components/ResumeDownload";
-import TestSimulation from "@/components/TestSimulation";
+import TestSimulation from "@/components/TestSimulation"; // Import name
 import About from "@/components/About";
-import { ShieldCheck, Zap, Globe, Code2 } from "lucide-react"; // npm install lucide-react
+import { ShieldCheck, Zap, Globe, Code2 } from "lucide-react"; 
 
 export default function Portfolio() {
   return (
     <div className="bg-[#020617] text-slate-200 min-h-screen selection:bg-blue-500/30">
       
-      {/* 1. HERO SECTION - The "Hook" */}
+      {/* 1. HERO SECTION */}
       <section className="relative h-screen flex flex-col justify-center items-center px-6 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-50"></div>
         
@@ -27,12 +27,13 @@ export default function Portfolio() {
             Rajaram Keshari
           </h1>
           <p className="max-w-2xl mx-auto text-slate-400 text-lg md:text-xl leading-relaxed">
-            7+ years of engineering quality through <span className="text-white">Hybrid Frameworks</span> [cite: 12] and 
-            <span className="text-white"> CI/CD Pipelines</span>[cite: 14]. Specialist in E-commerce, Banking, and Healthcare systems.
+            7+ years of engineering quality through <span className="text-white">Hybrid Frameworks</span> and 
+            <span className="text-white"> CI/CD Pipelines</span>. Specialist in E-commerce, Banking, and Healthcare systems.
           </p>
           
-          <div className="mt-10">
-            <TestCaseSimulation />
+          <div className="mt-10 flex justify-center">
+            {/* FIXED: Changed from TestCaseSimulation to TestSimulation to match the import */}
+            <TestSimulation />
           </div>
         </motion.div>
       </section>
@@ -47,31 +48,28 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* 3. PROFESSIONAL JOURNEY (The Timeline component we created) */}
+      {/* 3. ABOUT SECTION */}
+      <About />
+
+      {/* 4. PROFESSIONAL JOURNEY */}
       <Timeline />
 
-      {/* 4. TECH STACK MARQUEE */}
-      <section className="py-24 bg-slate-950">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h3 className="text-slate-500 font-mono text-xs uppercase tracking-widest mb-10">Mastered Technologies</h3>
-          <div className="flex flex-wrap justify-center gap-3">
-            {["Selenium", "Cucumber", "TestNG", "Rest Assured", "Karate", "Jenkins", "AWS", "MySQL", "Postman", "Maven", "Gradle"].map((skill) => (
-              <span key={skill} className="px-5 py-2 bg-slate-900 border border-slate-800 rounded-lg text-sm font-medium text-slate-300 hover:border-blue-500/50 transition-colors">
-                {skill}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* 5. SKILLS CLOUD */}
+      <SkillsCloud />
 
-      {/* 5. FOOTER / CONTACT */}
+      {/* 6. RESUME DOWNLOAD */}
+      <div className="flex justify-center pb-20">
+        <ResumeDownload />
+      </div>
+
+      {/* 7. FOOTER / CONTACT */}
       <footer className="py-20 text-center border-t border-slate-900">
         <p className="text-slate-500 mb-4">Ready to stabilize your release cycles?</p>
         <a href="mailto:kesharirajaram8@gmail.com" className="text-2xl font-bold text-white hover:text-blue-400 transition-colors">
           kesharirajaram8@gmail.com 
         </a>
         <div className="mt-8 text-slate-600 text-sm">
-          Jharsuguda, Odisha, India  • +91- 
+          Jharsuguda, Odisha, India  • +91-7008674346
         </div>
       </footer>
     </div>
