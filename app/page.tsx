@@ -41,9 +41,9 @@ export default function Portfolio() {
       <section className="py-20 bg-slate-900/20 border-y border-slate-800/50">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
           <StatCard icon={<Zap size={20}/>} label="Exp" value="7+ Years"  />
-          <StatCard icon={<Code2 size={20}/>} label="Language" value="Java Expert" [cite: 28] />
+          <StatCard icon={<Code2 size={20}/>} label="Language" value="Java Expert" />
           <StatCard icon={<Globe size={20}/>} label="Domains" value="E-com/BFSI/Health"  />
-          <StatCard icon={<ShieldCheck size={20}/>} label="Cloud" value="AWS Certified" [cite: 34] />
+          <StatCard icon={<ShieldCheck size={20}/>} label="Cloud" value="AWS Certified" />
         </div>
       </section>
 
