@@ -85,11 +85,9 @@ export default function Portfolio() {
   highlights={[
     "Automated 8+ critical loan modules (Origination to Funding) using Java/Cucumber, achieving zero-defect production releases.",
     "Owned the QA strategy for high-risk Closing & Funding workflows, maintaining a 100% defect detection rate before deployment.",
-    "Architected API automation suites using Karate Framework for rapid microservices validation and 'Shift-Left' testing.",
+    "Worked on API automation suites using Karate Framework for rapid microservices validation and 'Shift-Left' testing.",
     "Managed 200+ structured test cases in Jira X-Ray for real-time stakeholder reporting and execution tracking.",
-    "Optimized regression cycles by 40% through strategic automation of repetitive banking workflow validations.",
-    "Partnered with cross-functional teams in Agile ceremonies to refine requirements and drive Sprint velocity."
-  ]}
+    ]}
   impact="Secured the transactional integrity of multi-million dollar loan processing flows through 100% pre-prod defect detection."
 />
 
@@ -101,7 +99,6 @@ export default function Portfolio() {
     "Developed a Data-Driven framework using Java, Selenium, and Apache POI, enabling 100% test coverage across complex datasets without code changes.",
     "Engineered end-to-end API automation for healthcare integrations using Rest Assured, validating JSON schemas and complex error-handling scenarios.",
     "Implemented automated 'Health Checks' and service monitoring using AWS CloudWatch within the CI/CD pipeline.",
-    "Integrated Extent Reports and Log4j into the automation suite, providing clear traceability and diagnostic logs for QA and Dev teams.",
     "Managed HIPAA-compliant test data masking scripts to ensure secure PII handling across SIT and UAT environments.",
     "Facilitated Agile ceremonies and test planning, ensuring high-quality QA sign-offs for critical healthcare releases."
   ]}
