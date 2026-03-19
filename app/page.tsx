@@ -67,7 +67,7 @@ export default function Portfolio() {
       <div className="grid lg:grid-cols-3 gap-8">
   <ProjectCard 
     title="SleepIQ E-commerce Engine"
-    desc="End-to-end automation for a multi-million dollar IoT-integrated retail platform."
+    desc="End-to-end Testing of SleepIQ aplication, that tracks real-time sleep data and heart rates through smart-bed sensors, integrated with a high-traffic e-commerce platform for seamless hardware-to-cloud synchronization."
     tags={[ "Java","Selenium","AWS", "API","CI/CD", "TestNG" , "SQL" , "LT Profiling","AWS", "CI/CD", "CloudWatch"]}
     highlights={[
       "Developed a Hybrid Framework using Page Object Model (POM) and Data-Driven patterns.",

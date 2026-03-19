@@ -23,7 +23,7 @@ const experiences = [
     role: "QA Analyst",
     period: "Jan 2022 - Jul 2022",
     domain: "Healthcare",
-    description: "Manmual Testing of HTA application",
+    description: "Manual & DB Testing of HTA application",
     skills: ["Manual Testing", "Postman", "Jira"]
   },
   {
