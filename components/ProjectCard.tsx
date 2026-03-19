@@ -57,7 +57,7 @@ export default function ProjectCard({ title, desc, tags, impact, highlights }: P
 
           <div className="space-y-4">
             <div className="flex flex-wrap gap-2">
-              {tags.slice(0, 3).map(tag => (
+              {tags.slice(0, 4).map(tag => (
                 <span key={tag} className="text-[10px] font-mono bg-blue-500/5 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20 uppercase">
                   {tag}
                 </span>
