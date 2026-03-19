@@ -71,4 +71,5 @@ export default function Timeline() {
       </div>
     </section>
   );
+  
 }
