@@ -34,11 +34,11 @@ export default function About() {
           <div className="mt-8 space-y-3">
             <div className="flex items-center gap-3 text-sm text-slate-300">
               <MapPin size={18} className="text-blue-500" />
-              <span>Bhubaneswar, Odisha (Open to Remote)</span>
+              <span>Bhubaneswar, Odisha </span>
             </div>
             <div className="flex items-center gap-3 text-sm text-slate-300">
               <GraduationCap size={18} className="text-blue-500" />
-              <span>B.Tech in Computer Science</span>
+              <span>B.Tech in Mechanical Engineering</span>
             </div>
           </div>
         </motion.div>

@@ -28,7 +28,7 @@ export default function Portfolio() {
           </h1>
           <p className="max-w-2xl mx-auto text-slate-400 text-lg md:text-xl leading-relaxed">
             7+ years of engineering quality through <span className="text-white">Hybrid Frameworks</span> and 
-            <span className="text-white"> CI/CD Pipelines</span>. Specialist in E-commerce, Banking, and Healthcare systems.
+            <span className="text-white"> CI/CD Pipelines</span>. Specialist in high-scale systems across E-commerce, BFSI, and Healthcare systems.
           </p>
           
           <div className="mt-10 flex justify-center">
@@ -44,7 +44,7 @@ export default function Portfolio() {
           <StatCard icon={<Zap size={20}/>} label="Exp" value="7+ Years"  />
           <StatCard icon={<Code2 size={20}/>} label="Language" value="Java Expert" />
           <StatCard icon={<Globe size={20}/>} label="Domains" value="E-com/BFSI/Health"  />
-          <StatCard icon={<ShieldCheck size={20}/>} label="Cloud" value="AWS Certified" />
+          <StatCard icon={<ShieldCheck size={20}/>} label="Cloud" value="AWS Practiced" />
         </div>
       </section>
 
@@ -69,7 +69,7 @@ export default function Portfolio() {
           kesharirajaram8@gmail.com 
         </a>
         <div className="mt-8 text-slate-600 text-sm">
-          Jharsuguda, Odisha, India  • +91-7008674346
+          Jharsuguda, Odisha, India  • +91-
         </div>
       </footer>
     </div>

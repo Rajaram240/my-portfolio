@@ -2,20 +2,20 @@
 import { motion, useAnimation } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Terminal, Play, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
-
+import { FileSearch, Terminal, Play, Zap, ShieldCheck, CheckCircle2 } from "lucide-react";
 export default function TestSimulation() {
   const [status, setStatus] = useState("idle"); // idle, running, success
   const [currentStep, setCurrentStep] = useState(-1);
   const controls = useAnimation();
 
   const steps = [
-    { label: "Initializing Hybrid Framework (POM + Data-Driven)", icon: <Terminal size={14}/> },
-    { label: "Validating SleepIQ E-commerce Gateway", icon: <Play size={14}/> },
-    { label: "API Handshake: REST Assured & Karate", icon: <Play size={14}/> },
-    { label: "AWS Environment Stability Check", icon: <Play size={14}/> },
-    { label: "Generating Test Summary Report", icon: <CheckCircle2 size={14}/> }
-  ];
-
+  { label: "Analyzing Requirements & Test Planning", icon: <FileSearch size={14} className="text-purple-400" /> },
+  { label: "Initializing Hybrid Framework (POM + Data-Driven)", icon: <Terminal size={14}/> },
+  { label: "API Handshake: REST Assured & Karate", icon: <Play size={14}/> },
+  { label: "CI/CD Pipeline: Triggering Jenkins Build", icon: <Zap size={14} className="text-yellow-500" /> },
+  { label: "Validating Environment Stability (AWS/SIT)", icon: <ShieldCheck size={14}/> },
+  { label: "Generating Allure Test Summary Report", icon: <CheckCircle2 size={14} className="text-green-500" /> }
+];
   const runSimulation = async () => {
     setStatus("running");
     setCurrentStep(0);
