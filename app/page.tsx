@@ -38,47 +38,75 @@ export default function Portfolio() {
           </div>
         </motion.div>
       </section>
+{/* SECTION HEADER: STRATEGIC ENGINEERING IMPACT */}
+<div className="mb-16 relative">
+  {/* Decorative background element */}
+  <div className="absolute -left-4 top-0 w-1 h-16 bg-blue-600 rounded-full hidden md:block"></div>
+  
+  <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+    <div>
+      <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
+        Strategic Engineering <span className="text-blue-500">Impact</span>
+      </h2>
+      <p className="mt-4 text-slate-400 max-w-2xl text-base md:text-lg leading-relaxed">
+        A deep dive into high-scale automation frameworks and performance optimization 
+        strategies delivered across <span className="text-white border-b border-blue-500/50">E-commerce, BFSI, and Healthcare</span>.
+      </p>
+    </div>
 
+    {/* Metric Badge: This shows seniority */}
+    <div className="bg-slate-900/80 border border-slate-800 p-4 rounded-2xl flex flex-col items-center justify-center min-w-[140px]">
+      <span className="text-blue-400 font-mono text-2xl font-bold">100%</span>
+      <span className="text-[10px] text-slate-500 uppercase tracking-widest text-center mt-1">
+        Defect Detection <br/> in High-Risk Flows
+      </span>
+    </div>
+  </div>
+</div>
       {/* 2. STRATEGIC IMPACT (PROJECTS) */}
       <div className="grid lg:grid-cols-3 gap-8">
   <ProjectCard 
     title="SleepIQ E-commerce Engine"
     desc="End-to-end automation for a multi-million dollar IoT-integrated retail platform."
-    tags={["Selenium", "Java", "Appium", "TestNG"]}
+    tags={["Selenium", "Java", "API", "TestNG" , "SQL" , "LT Profiling","AWS", "CI/CD", "CloudWatch"]}
     highlights={[
       "Developed a Hybrid Framework using Page Object Model (POM) and Data-Driven patterns.",
-      "Implemented Parallel Execution across Grid/SauceLabs, reducing suite time from 12h to 3h.",
-      "Automated critical checkout flows and IoT bed-pairing sequences using Appium.",
+      "Orchestrated a comprehensive Parity Regression strategy for FE/BE services during a core Java 17 migration, ensuring 100% functional consistency and zero production leakage",
+      "Owned end-to-end deployment validation across DEV, QA, TEST, ensuring zero environment-related production escapes.",
       "Integrated Allure Reporting for high-level stakeholder visibility on build health."
     ]}
-    impact="Achieved 95% automation coverage for critical path, saving 80+ man-hours per sprint."
+    impact="Achieved 95% automation coverage for critical path, saving several man-hours per sprint."
   />
   
   <ProjectCard 
-    title="BFSI Payment Gateway"
-    desc="High-security API validation for a Tier-1 banking transactional system."
-    tags={["Rest Assured", "Karate", "Java", "SQL"]}
-    highlights={[
-      "Authored 300+ automated API tests covering OAuth2.0 authentication and encryption.",
-      "Built a custom data-seeding utility to manage complex transactional test data in SIT.",
-      "Performed Schema Validation and Database testing to ensure 100% ACID compliance.",
-      "Created 'Karate' DSL scripts for rapid functional testing of microservices."
-    ]}
-    impact="Identified critical concurrency bugs in the payment engine that prevented $100k+ in leakage."
-  />
+  title="BFSI Loan Lifecycle Automation"
+  desc="End-to-end quality engineering for high-risk Banking modules including Loan Origination, Closing, and Funding."
+  tags={["Java", "Selenium", "Cucumber", "Karate DSL", "Jira X-Ray"]}
+  highlights={[
+    "Automated 8+ critical loan modules (Origination to Funding) using Java/Cucumber, achieving zero-defect production releases.",
+    "Owned the QA strategy for high-risk Closing & Funding workflows, maintaining a 100% defect detection rate before deployment.",
+    "Architected API automation suites using Karate Framework for rapid microservices validation and 'Shift-Left' testing.",
+    "Managed 200+ structured test cases in Jira X-Ray for real-time stakeholder reporting and execution tracking.",
+    "Optimized regression cycles by 40% through strategic automation of repetitive banking workflow validations.",
+    "Partnered with cross-functional teams in Agile ceremonies to refine requirements and drive Sprint velocity."
+  ]}
+  impact="Secured the transactional integrity of multi-million dollar loan processing flows through 100% pre-prod defect detection."
+/>
 
   <ProjectCard 
-    title="Healthcare Cloud Infrastructure"
-    desc="Quality Operations (QAOps) for an AWS-hosted patient management system."
-    tags={["AWS", "CI/CD", "CloudWatch"]}
-    highlights={[
-      "Orchestrated Jenkins CI/CD pipelines to trigger automated smoke tests on every PR.",
-      "Implemented AWS CloudWatch monitoring for automated 'Health Checks' of services.",
-      "Containerized the test execution environment using Docker for environment parity.",
-      "Managed HIPAA-compliant test data masking scripts using SQL and Python."
-    ]}
-    impact="Reduced environment-related 'Flaky Tests' by 45% and ensured 99.9% deployment stability."
-  />
+  title="Healthcare Cloud Infrastructure" 
+  desc="Quality Operations (QAOps) for an AWS-hosted Patient Management System with high data complexity."
+  tags={["Java", "Selenium", "Rest Assured", "SQL Server", "AWS", "Apache POI"]}
+  highlights={[
+    "Developed a Data-Driven framework using Java, Selenium, and Apache POI, enabling 100% test coverage across complex datasets without code changes.",
+    "Engineered end-to-end API automation for healthcare integrations using Rest Assured, validating JSON schemas and complex error-handling scenarios.",
+    "Implemented automated 'Health Checks' and service monitoring using AWS CloudWatch within the CI/CD pipeline.",
+    "Integrated Extent Reports and Log4j into the automation suite, providing clear traceability and diagnostic logs for QA and Dev teams.",
+    "Managed HIPAA-compliant test data masking scripts to ensure secure PII handling across SIT and UAT environments.",
+    "Facilitated Agile ceremonies and test planning, ensuring high-quality QA sign-offs for critical healthcare releases."
+  ]}
+  impact="Reduced environment-related 'Flaky Tests' by 45% and improved defect identification speed through detailed reporting."
+/>
 </div>
 
       {/* 3. TIMELINE SECTION */}
@@ -92,8 +120,8 @@ export default function Portfolio() {
       {/* 5. FOOTER */}
       <footer className="py-12 border-t border-slate-900 text-center">
         <div className="flex justify-center gap-6 mb-6">
-          <a href="mailto:your-email@example.com" className="text-slate-400 hover:text-white transition-colors"><Mail size={20}/></a>
-          <a href="#" className="text-slate-400 hover:text-white transition-colors"><Linkedin size={20}/></a>
+          <a href="mailto:kesharirajaram8@gmail.com" className="text-slate-400 hover:text-white transition-colors"><Mail size={20}/></a>
+          <a href="https://www.linkedin.com/in/rajaramkeshari/" className="text-slate-400 hover:text-white transition-colors"><Linkedin size={20}/></a>
           <a href="#" className="text-slate-400 hover:text-white transition-colors"><Globe size={20}/></a>
         </div>
         <p className="text-slate-600 text-xs font-mono uppercase tracking-widest">

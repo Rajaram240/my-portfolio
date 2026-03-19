@@ -19,6 +19,14 @@ const experiences = [
     skills: ["Cucumber", "Karate", "MS SQL", "Agile"]
   },
   {
+    company: "IQVIA",
+    role: "QA Analyst",
+    period: "Jan 2022 - Jul 2022",
+    domain: "Healthcare",
+    description: "Manmual Testing of HTA application",
+    skills: ["Manual Testing", "Postman", "Jira"]
+  },
+  {
     company: "Legato Health Technologies",
     role: "Software Engineer",
     period: "Apr 2019 - Dec 2021",
