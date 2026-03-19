@@ -56,7 +56,7 @@ export default function Portfolio() {
 
     {/* Metric Badge: This shows seniority */}
     <div className="bg-slate-900/80 border border-slate-800 p-4 rounded-2xl flex flex-col items-center justify-center min-w-[140px]">
-      <span className="text-blue-400 font-mono text-2xl font-bold">100%</span>
+      <span className="text-blue-400 font-mono text-2xl font-bold">90%</span>
       <span className="text-[10px] text-slate-500 uppercase tracking-widest text-center mt-1">
         Defect Detection <br/> in High-Risk Flows
       </span>
