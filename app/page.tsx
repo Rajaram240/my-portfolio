@@ -83,11 +83,11 @@ export default function Portfolio() {
   desc="End-to-end quality engineering for high-risk Banking modules including Loan Origination, Closing, and Funding."
   tags={["Java", "Selenium", "Cucumber", "Karate DSL", "Jira X-Ray"]}
   highlights={[
-    "Automated 8+ critical loan modules (Origination to Funding) using Java/Cucumber, achieving zero-defect production releases.",
-    "Owned the QA strategy for high-risk Closing & Funding workflows, maintaining a 100% defect detection rate before deployment.",
-    "Worked on API automation suites using Karate Framework for rapid microservices validation and 'Shift-Left' testing.",
-    "Managed 200+ structured test cases in Jira X-Ray for real-time stakeholder reporting and execution tracking.",
-    ]}
+  "Led Java 17 migration validation and pre-release JVM profiling (60k load) to ensure zero regressions.",
+  "Worked in a Hybrid POM framework (Java/Selenium) reducing regression cycles from 12h to 3h.",
+  "Automated complex IoT bed-pairing and checkout flows using Appium and TestNG.",
+  "Integrated Allure/Grafana dashboards for real-time stakeholder visibility into build health."
+]}
   impact="Secured the transactional integrity of multi-million dollar loan processing flows through 100% pre-prod defect detection."
 />
 
@@ -96,12 +96,11 @@ export default function Portfolio() {
   desc="Quality Operations (QAOps) for an AWS-hosted Patient Management System with high data complexity."
   tags={["Java", "Selenium", "Rest Assured", "SQL Server", "AWS", "Apache POI"]}
   highlights={[
-    "Developed a Data-Driven framework using Java, Selenium, and Apache POI, enabling 100% test coverage across complex datasets without code changes.",
-    "Engineered end-to-end API automation for healthcare integrations using Rest Assured, validating JSON schemas and complex error-handling scenarios.",
-    "Implemented automated 'Health Checks' and service monitoring using AWS CloudWatch within the CI/CD pipeline.",
-    "Managed HIPAA-compliant test data masking scripts to ensure secure PII handling across SIT and UAT environments.",
-    "Facilitated Agile ceremonies and test planning, ensuring high-quality QA sign-offs for critical healthcare releases."
-  ]}
+  "Developed a Data-Driven framework (Apache POI) enabling execution across 100+ complex datasets.",
+  "Engineered Rest-Assured API suites for healthcare integrations with strict JSON schema validation.",
+  "Orchestrated Jenkins CI/CD pipelines with AWS CloudWatch 'Health Checks' for service uptime.",
+  "Implemented Extent Reports/Log4j to provide deep diagnostic traceability for dev teams."
+]}
   impact="Reduced environment-related 'Flaky Tests' by 45% and improved defect identification speed through detailed reporting."
 />
 </div>
