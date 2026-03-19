@@ -12,31 +12,34 @@ export default function Portfolio() {
     <div className="bg-[#020617] text-slate-200 min-h-screen selection:bg-blue-500/30">
       
       {/* 1. HERO SECTION */}
-      <section className="relative h-screen flex flex-col justify-center items-center px-6 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-50"></div>
-        
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="z-10 text-center"
-        >
-          <h2 className="text-blue-400 font-mono tracking-[0.3em] mb-4 text-sm uppercase">
-            Senior QA Automation Engineer // Est. 2019
-          </h2>
-          <h1 className="text-6xl md:text-8xl font-extrabold text-white mb-6 tracking-tight">
-            Rajaram Keshari
-          </h1>
-          <p className="max-w-2xl mx-auto text-slate-400 text-lg md:text-xl leading-relaxed">
-            7+ years of engineering quality through <span className="text-white">Hybrid Frameworks</span> and 
-            <span className="text-white"> CI/CD Pipelines</span>. Specialist in high-scale systems across E-commerce, BFSI, and Healthcare systems.
-          </p>
-          
-          <div className="mt-10 flex justify-center">
-            {/* FIXED: Changed from TestCaseSimulation to TestSimulation to match the import */}
-            <TestSimulation />
-          </div>
-        </motion.div>
-      </section>
+<section className="relative h-screen flex flex-col justify-center items-center px-6 overflow-hidden">
+  <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-50"></div>
+  
+  <motion.div 
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    className="z-10 text-center w-full"
+  >
+    {/* FIXED: Added leading-relaxed and adjusted mobile text size */}
+    <h2 className="text-blue-400 font-mono tracking-[0.2em] md:tracking-[0.3em] mb-2 md:mb-4 text-xs md:text-sm uppercase">
+      Senior QA Automation Engineer // Est. 2019
+    </h2>
+
+    {/* FIXED: Reduced mobile size from 6xl to 4xl so it fits on iPhone screens */}
+    <h1 className="text-4xl sm:text-6xl md:text-8xl font-extrabold text-white mb-6 tracking-tight leading-tight">
+      Rajaram Keshari
+    </h1>
+
+    <p className="max-w-2xl mx-auto text-slate-400 text-base md:text-xl leading-relaxed px-4">
+      7+ years of engineering quality through <span className="text-white">Hybrid Frameworks</span> and 
+      <span className="text-white"> CI/CD Pipelines</span>. Specialist in E-commerce, Banking, and Healthcare systems.
+    </p>
+    
+    <div className="mt-8 md:mt-10 flex justify-center scale-90 md:scale-100">
+      <TestSimulation />
+    </div>
+  </motion.div>
+</section>
 
       {/* 2. STATS & IMPACT SECTION */}
       <section className="py-20 bg-slate-900/20 border-y border-slate-800/50">
