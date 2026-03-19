@@ -1,8 +1,7 @@
 "use client";
 import { motion, useAnimation } from "framer-motion";
 import { useState, useEffect } from "react";
-import { Terminal, Play, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
-import { FileSearch, Terminal, Play, Zap, ShieldCheck, CheckCircle2 } from "lucide-react";
+import { FileSearch,Zap, Terminal, Play, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 export default function TestSimulation() {
   const [status, setStatus] = useState("idle"); // idle, running, success
   const [currentStep, setCurrentStep] = useState(-1);
