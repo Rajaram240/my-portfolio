@@ -40,35 +40,46 @@ export default function Portfolio() {
       </section>
 
       {/* 2. STRATEGIC IMPACT (PROJECTS) */}
-      <section className="py-24 border-t border-slate-900 bg-slate-950/30">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4 italic">Core Impact</h2>
-            <p className="text-slate-400 max-w-2xl">Proven results in high-scale environments.</p>
-          </div>
+      <div className="grid lg:grid-cols-3 gap-8">
+  <ProjectCard 
+    title="SleepIQ E-commerce Engine"
+    desc="End-to-end automation for a multi-million dollar IoT-integrated retail platform."
+    tags={["Selenium", "Java", "Appium", "TestNG"]}
+    highlights={[
+      "Developed a Hybrid Framework using Page Object Model (POM) and Data-Driven patterns.",
+      "Implemented Parallel Execution across Grid/SauceLabs, reducing suite time from 12h to 3h.",
+      "Automated critical checkout flows and IoT bed-pairing sequences using Appium.",
+      "Integrated Allure Reporting for high-level stakeholder visibility on build health."
+    ]}
+    impact="Achieved 95% automation coverage for critical path, saving 80+ man-hours per sprint."
+  />
+  
+  <ProjectCard 
+    title="BFSI Payment Gateway"
+    desc="High-security API validation for a Tier-1 banking transactional system."
+    tags={["Rest Assured", "Karate", "Java", "SQL"]}
+    highlights={[
+      "Authored 300+ automated API tests covering OAuth2.0 authentication and encryption.",
+      "Built a custom data-seeding utility to manage complex transactional test data in SIT.",
+      "Performed Schema Validation and Database testing to ensure 100% ACID compliance.",
+      "Created 'Karate' DSL scripts for rapid functional testing of microservices."
+    ]}
+    impact="Identified critical concurrency bugs in the payment engine that prevented $100k+ in leakage."
+  />
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <ProjectCard 
-              title="E-comm Framework"
-              desc="Designed Hybrid POM for SleepIQ using Java & Selenium for 500+ scenarios."
-              tags={["Selenium", "Java"]}
-              impact="Reduced regression cycle from 12 hrs to 4 hrs."
-            />
-            <ProjectCard 
-              title="BFSI API Suite"
-              desc="Engineered secure API validation for banking gateways via Rest Assured & Karate."
-              tags={["Rest Assured", "API"]}
-              impact="Zero critical security leakage in 2 years."
-            />
-            <ProjectCard 
-              title="Cloud QA Ops"
-              desc="Integrated automated health checks into AWS-based CI/CD pipelines."
-              tags={["AWS", "CI/CD"]}
-              impact="99.9% environment uptime via auto-checks."
-            />
-          </div>
-        </div>
-      </section>
+  <ProjectCard 
+    title="Healthcare Cloud Infrastructure"
+    desc="Quality Operations (QAOps) for an AWS-hosted patient management system."
+    tags={["AWS", "CI/CD", "CloudWatch"]}
+    highlights={[
+      "Orchestrated Jenkins CI/CD pipelines to trigger automated smoke tests on every PR.",
+      "Implemented AWS CloudWatch monitoring for automated 'Health Checks' of services.",
+      "Containerized the test execution environment using Docker for environment parity.",
+      "Managed HIPAA-compliant test data masking scripts using SQL and Python."
+    ]}
+    impact="Reduced environment-related 'Flaky Tests' by 45% and ensured 99.9% deployment stability."
+  />
+</div>
 
       {/* 3. TIMELINE SECTION */}
       <Timeline />
