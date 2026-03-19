@@ -68,7 +68,7 @@ export default function Portfolio() {
   <ProjectCard 
     title="SleepIQ E-commerce Engine"
     desc="End-to-end automation for a multi-million dollar IoT-integrated retail platform."
-    tags={["Selenium", "Java", "API", "TestNG" , "SQL" , "LT Profiling","AWS", "CI/CD", "CloudWatch"]}
+    tags={[ "Java","Selenium","AWS", "API","CI/CD", "TestNG" , "SQL" , "LT Profiling","AWS", "CI/CD", "CloudWatch"]}
     highlights={[
       "Developed a Hybrid Framework using Page Object Model (POM) and Data-Driven patterns.",
       "Orchestrated a comprehensive Parity Regression strategy for FE/BE services during a core Java 17 migration, ensuring 100% functional consistency and zero production leakage",
@@ -94,14 +94,12 @@ export default function Portfolio() {
   <ProjectCard 
   title="Healthcare Cloud Infrastructure" 
   desc="Quality Operations (QAOps) for an AWS-hosted Patient Management System with high data complexity."
-  tags={["Java", "Selenium", "Rest Assured", "SQL Server", "AWS", "Apache POI"]}
+  tags={["Java", "Selenium", "Rest Assured","AWS", "SQL Server"]}
   highlights={[
     "Developed a Data-Driven framework using Java, Selenium, and Apache POI, enabling 100% test coverage across complex datasets without code changes.",
     "Engineered end-to-end API automation for healthcare integrations using Rest Assured, validating JSON schemas and complex error-handling scenarios.",
-    "Implemented automated 'Health Checks' and service monitoring using AWS CloudWatch within the CI/CD pipeline.",
     "Integrated Extent Reports and Log4j into the automation suite, providing clear traceability and diagnostic logs for QA and Dev teams.",
     "Managed HIPAA-compliant test data masking scripts to ensure secure PII handling across SIT and UAT environments.",
-    "Facilitated Agile ceremonies and test planning, ensuring high-quality QA sign-offs for critical healthcare releases."
   ]}
   impact="Reduced environment-related 'Flaky Tests' by 45% and improved defect identification speed through detailed reporting."
 />
