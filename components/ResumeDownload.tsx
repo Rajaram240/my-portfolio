@@ -62,7 +62,7 @@ export default function ResumeDownload() {
         </button>
       </div>
       <p className="text-slate-500 text-xs font-mono tracking-tighter uppercase">
-        Artifact: RajaramKeshari_7yrs_QA.pdf [cite: 4, 43]
+        Artifact: RajaramKeshari_Resume.pdf [cite: 4, 43]
       </p>
     </div>
   );
